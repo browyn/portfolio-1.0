@@ -9,7 +9,7 @@ module.exports = {
         lg: "6rem",
       },
       screens: {
-        lg: "1280px",
+        lg: "1024px",
       },
       center: true,
     },
