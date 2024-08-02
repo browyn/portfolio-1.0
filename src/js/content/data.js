@@ -35,4 +35,22 @@ export const data = {
       and impact, one line of code at a time.
     </p>`,
   ],
+  projects: [
+    {
+      title: "Eval360",
+      type: "Web App",
+      tags: ["React", "JavaScript"],
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque totam accusantium eveniet enim minima at ab maxime mollitia vitae culpa sit recusandae, error esse nisi. Nostrum facere eos in ipsum.",
+      githubUrl: "",
+    },
+    {
+      title: "Portfolio 1.0",
+      type: "Website",
+      tags: ["HTML5", "CSS", "Tailwindcss", "JavaScript"],
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque totam accusantium eveniet enim minima at ab maxime mollitia vitae culpa sit recusandae, error esse nisi. Nostrum facere eos in ipsum.",
+      githubUrl: "",
+    },
+  ],
 };

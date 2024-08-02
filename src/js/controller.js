@@ -1,4 +1,5 @@
 import home from "./views/home.js";
+import { data } from "./content/data.js";
 
 class Controller {
   _data;
@@ -16,7 +17,9 @@ class Controller {
   }
 
   index() {
-    home.render();
+    home.render({
+      projects: data.projects,
+    });
   }
 }
 

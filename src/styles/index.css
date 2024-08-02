@@ -8,7 +8,6 @@
   }
 
   * {
-    letter-spacing: 1px;
     @apply leading-8 font-poppins;
   }
 

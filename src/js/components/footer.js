@@ -17,7 +17,7 @@ class Footer {
   #_generateMarkup() {
     return `
         <div class="w-full bg-black">
-            <div class="container py-24 flex flex-col gap-8 justify-center text-center">
+            <div class="container py-32 flex flex-col gap-8 justify-center text-center">
                 <span class="text-sm text-white" data-aos="fade-in">
                     &copy; ${new Date().getFullYear()} Designed & Developed by 
                     <a href="">Browyn Louis</a>
