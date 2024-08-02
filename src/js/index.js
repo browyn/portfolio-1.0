@@ -1,3 +1,4 @@
+import header from "./components/header.js";
 import controller from "./controller.js";
 import { getPath } from "./helpers.js";
 
@@ -14,4 +15,6 @@ document.addEventListener("DOMContentLoaded", function App() {
     default:
       return;
   }
+
+  header.registerEventListeneres();
 });

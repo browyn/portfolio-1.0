@@ -17,10 +17,9 @@ class View {
   }
 
   _prepareViewUsingLayout(header, footer) {
-    header && this.#_parentEl.insertAdjacentElement("afterbegin", header);
-
     this._prepareView();
 
+    header && this.#_parentEl.insertAdjacentElement("afterbegin", header);
     footer && this.#_parentEl.insertAdjacentElement("beforeend", footer);
   }
 

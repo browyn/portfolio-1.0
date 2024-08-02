@@ -8,7 +8,6 @@
   }
 
   * {
-    position: relative;
     @apply tracking-widest leading-8 font-poppins;
   }
 
@@ -25,7 +24,7 @@
 
 @layer components {
   .btn {
-    @apply uppercase;
+    @apply uppercase font-medium inline-flex items-center gap-2.5 relative;
   }
 
   .btn::before {

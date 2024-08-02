@@ -1,12 +1,24 @@
-import View from "./View.js";
+import View from "./view.js";
+import hero from "../components/home/hero.js";
 
 class Home extends View {
+  #_container;
+
   constructor() {
     super();
 
     if (Home._instance) {
       return Home._instance;
     }
+
+    this.#_container = document.createElement("main");
+    this.#_container.id = "main";
+  }
+
+  _generateMarkup() {
+    this.#_container.append(hero.render());
+
+    return this.#_container;
   }
 }
 

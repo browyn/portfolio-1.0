@@ -9,7 +9,11 @@ class Controller {
     }
   }
 
-  init() {}
+  init() {
+    AOS.init({
+      duration: 1000,
+    });
+  }
 
   index() {
     home.render();
