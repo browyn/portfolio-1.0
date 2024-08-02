@@ -1,4 +1,4 @@
-import { isEven } from "../../helpers.js";
+import { isEven } from "../../helpers";
 
 class Projects {
   #_el;

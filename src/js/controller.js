@@ -1,5 +1,8 @@
-import home from "./views/home.js";
-import { data } from "./content/data.js";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import home from "./views/home";
+import { data } from "./content/data";
 
 class Controller {
   _data;

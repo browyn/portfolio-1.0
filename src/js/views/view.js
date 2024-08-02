@@ -1,5 +1,5 @@
-import footer from "../components/footer.js";
-import header from "../components/header.js";
+import footer from "../components/footer";
+import header from "../components/header";
 
 class View {
   #_parentEl;

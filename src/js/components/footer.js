@@ -1,4 +1,4 @@
-import { data } from "../content/data.js";
+import { data } from "../content/data";
 
 class Footer {
   #_el;

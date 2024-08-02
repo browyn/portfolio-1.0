@@ -1,6 +1,6 @@
-import header from "./components/header.js";
-import controller from "./controller.js";
-import { getPath } from "./helpers.js";
+import header from "./components/header";
+import controller from "./controller";
+import { getPath } from "./helpers";
 
 document.addEventListener("DOMContentLoaded", function App() {
   controller.init();

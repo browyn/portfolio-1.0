@@ -1,9 +1,9 @@
-import View from "./view.js";
-import hero from "../components/home/hero.js";
-import about from "../components/home/about.js";
-import experience from "../components/home/experience.js";
-import contact from "../components/home/contact.js";
-import projects from "../components/home/projects.js";
+import View from "./view";
+import hero from "../components/home/hero";
+import about from "../components/home/about";
+import experience from "../components/home/experience";
+import contact from "../components/home/contact";
+import projects from "../components/home/projects";
 
 class Home extends View {
   #_data;
