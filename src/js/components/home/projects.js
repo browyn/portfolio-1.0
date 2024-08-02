@@ -65,13 +65,15 @@ class Projects {
 
     return `
       <div class="w-full flex p-2 flex-col-reverse sm:flex-row sm:even:flex-row-reverse items-center relative">
-        <article class="flex-1 flex flex-col gap-6">
-          <div class="flex flex-col gap-1 relative ${isEven && "items-end"}">
+        <article class="flex-1 flex flex-col gap-5">
+          <div class="flex flex-col gap-1 relative py-8 ${
+            isEven && "items-end"
+          }">
             <h3 class="font-bold text-sm">${title}</h3>
             <span class="text-xs">${type}</span>
           </div>
           <p align="justify" class="font-light text-sm shadow-lg relative z-[1] bg-white p-6 ${
-            isEven ? "pl-10" : "pr-10"
+            isEven ? "sm:pl-10" : "sm:pr-10"
           }">
             ${description}
           </p>
@@ -96,7 +98,7 @@ class Projects {
             </a>
           </div>
         </article>
-        <div class="h-[300px] -mb-6 sm:mb-0 sm:even:-mr-8 sm:flex-1 sm:-ml-8 bg-black/10 hover:scale-[105%] transition-all duration-200 w-[90%] mx-auto relative z-[1]"></div>
+        <div class="h-[300px] -mb-6 sm:mb-0 sm:even:-mr-8 sm:flex-1 sm:-ml-8 bg-black/10 hover:scale-[105%] transition-all duration-200 w-[80%] mx-auto relative z-[1]"></div>
       </div>
     `;
   }
