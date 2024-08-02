@@ -35,5 +35,37 @@ To get a local copy of this project up and running, follow these steps:
 1. **Clone the repository:**
 
 ```bash
-    git clone https://github.com/yourusername/your-portfolio-project.git
+    git clone https://github.com/browyn/portfolio-1.0.git
 ```
+
+2. **Navigate to the project directory:**
+
+```bash
+    cd portfolio-1.0
+```
+
+3. **Install project dependencies:**
+
+```bash
+    npm install
+```
+
+4. **Install project dependencies:**
+
+```bash
+    npm run dev
+```
+
+This will start Parcel and open the project in your default web browser.
+
+5. **Build for production:**
+
+```bash
+    npm run build
+```
+
+This will create an optimized version of your portfolio in the dist folder.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
