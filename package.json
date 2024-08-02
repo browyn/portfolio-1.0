@@ -6,7 +6,7 @@
     "postcss": "^8.4.40",
     "tailwindcss": "^3.4.7"
   },
-  "source": "./index.html",
+  "source": "./src/index.html",
   "private": "true",
   "scripts": {
     "dev": "parcel --port 3000",

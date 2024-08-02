@@ -16,13 +16,13 @@ class Footer {
 
   #_generateMarkup() {
     return `
-        <div class="w-full bg-black">
+        <div class="w-full bg-black"  data-aos="fade-in">
             <div class="container py-32 flex flex-col gap-8 justify-center text-center">
-                <span class="text-sm text-white" data-aos="fade-in">
+                <span class="text-sm text-white">
                     &copy; ${new Date().getFullYear()} Designed & Developed by 
                     <a href="">Browyn Louis</a>
                 </span>
-                <div class="flex items-center gap-4 text-white justify-center text-center flex-wrap" data-aos="fade-up">
+                <div class="flex items-center gap-4 text-white justify-center text-center flex-wrap">
                     ${this.#_renderSocials()}
                 </div>
             </div>
