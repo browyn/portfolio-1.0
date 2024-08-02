@@ -1,6 +1,7 @@
 import View from "./view.js";
 import hero from "../components/home/hero.js";
 import about from "../components/home/about.js";
+import experience from "../components/home/experience.js";
 
 class Home extends View {
   #_container;
@@ -17,7 +18,7 @@ class Home extends View {
   }
 
   _generateMarkup() {
-    this.#_container.append(hero.render(), about.render());
+    this.#_container.append(hero.render(), about.render(), experience.render());
 
     return this.#_container;
   }
