@@ -54,7 +54,7 @@ class Header {
                       `
                     <a
                       href="#${link.name.toLowerCase()}"
-                      class="btn before:bg-white text-white text-sm relative"
+                      class="btn before:w-0 before:bg-white text-white text-sm relative"
                       style="text-transform:lowercase"
                     >
                       ${link.name}
