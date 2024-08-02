@@ -18,7 +18,7 @@ class Header {
 
   #_generateMarkup() {
     return `
-      <div class="w-full fixed">
+      <div class="w-full fixed z-10">
         <div
           class="container flex z-10 items-center justify-between py-4 bg-white"
           data-aos="slide-down"

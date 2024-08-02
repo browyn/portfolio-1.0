@@ -16,8 +16,8 @@ class Hero {
 
   #_generateMarkup() {
     return `
-      <div class="flex flex-col w-full h-screen max-h-[960px] items-center justify-center container">
-        <div class="flex flex-col pt-20 m-auto items-center justify-center md:flex-row max-w-[720px]">
+      <div class="flex flex-col w-full h-screen mt-auto max-h-[960px] items-center justify-center container">
+        <div class="flex flex-col m-auto items-center justify-center md:flex-row max-w-[720px]">
           <div class="flex flex-col gap-4">
             <div class="flex flex-col gap-2">
               <h1 class="font-bold" data-aos="fade-up">
@@ -30,7 +30,8 @@ class Hero {
               </p>
             </div>
             <div 
-                class="flex gap-5 mt-10 items-center flex-wrap text-black/80" data-aos="fade-up" 
+                class="flex gap-4 mt-10 items-center flex-wrap text-black/80" 
+                data-aos="fade-up" 
                 data-aos-duration="2000"
             >
               ${this.#_renderSocials()}
@@ -45,7 +46,7 @@ class Hero {
             </div>
           </div>
         </div>
-        <div class="mt-auto animate-bounce">
+        <div class="animate-bounce">
           <i class="ph ph-caret-double-down text-[48px]"></i>
         </div>
       </div>
