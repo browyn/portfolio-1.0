@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    position: relative;
+    @apply tracking-widest leading-8 font-poppins;
+  }
+
+  a,
+  button {
+    @apply opacity-75 transition-opacity duration-100 ease-linear;
+  }
+
+  a:hover,
+  button:hover {
+    @apply opacity-100;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply uppercase;
+  }
+
+  .btn::before {
+    content: var(--tw-content);
+    @apply h-[0.125rem] w-0 absolute bottom-0 bg-black;
+  }
+
+  .btn:hover::before {
+    @apply w-[30px] transition-all duration-75;
+  }
+}
