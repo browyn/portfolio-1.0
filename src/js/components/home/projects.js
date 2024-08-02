@@ -32,7 +32,7 @@ class Projects {
               this.#_projects.length > 0
                 ? this.#_projects.map((project, index) =>
                     this.#_generateProjectDetailsMarkup(project, index + 1)
-                  )
+                  ).join("")
                 : `<div class="w-full flex items-center justify-center flex-col gap-2 py-10 text-center">
                   <h3 class="font-bold text-sm">No Projects Yet!</h3>
                   <span class="text-xs">
