@@ -1,3 +1,6 @@
+import "aos/dist/aos.css";
+import "@phosphor-icons/web";
+
 import header from "./components/header";
 import controller from "./controller";
 import { getPath } from "./helpers";
