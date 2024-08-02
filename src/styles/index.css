@@ -30,7 +30,7 @@
   .btn::before,
   .active-link::before {
     content: var(--tw-content);
-    @apply h-[0.125rem] absolute bottom-0 bg-black w-2;
+    @apply h-[0.125rem] absolute bottom-0 bg-black w-1;
   }
 
   .btn:hover::before,
