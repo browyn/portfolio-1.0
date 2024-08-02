@@ -1,3 +1,5 @@
+import { data } from "../content/data.js";
+
 class Header {
   #_el;
 
@@ -14,9 +16,12 @@ class Header {
 
   registerEventListeneres() {
     this.#_handleMenu();
+    this.#_handleActiveMenu();
   }
 
   #_generateMarkup() {
+    const { footerLinks } = data;
+
     return `
       <div class="w-full fixed z-10">
         <div
@@ -43,41 +48,20 @@ class Header {
               id="nav"
             >
               <div class="flex flex-col gap-3.5">
-                <a
-                  href="#"
-                  class="btn before:bg-white text-white text-sm"
-                  style="text-transform:lowercase"
-                >
-                  Home
-                </a>
-                <a
-                  href="#"
-                  class="btn before:bg-white text-white text-sm"
-                  style="text-transform:lowercase"
-                >
-                  About
-                </a>
-                <a
-                  href="#"
-                  class="btn before:bg-white text-white text-sm"
-                  style="text-transform:lowercase"
-                >
-                  Experiences
-                </a>
-                <a
-                  href="#"
-                  class="btn before:bg-white text-white text-sm"
-                  style="text-transform:lowercase"
-                >
-                  Projects
-                </a>
-                <a
-                  href="#"
-                  class="btn before:bg-white text-white text-sm"
-                  style="text-transform:lowercase"
-                >
-                  Contact
-                </a>
+                ${footerLinks
+                  .map(
+                    (link) =>
+                      `
+                    <a
+                      href="#${link.name.toLowerCase()}"
+                      class="btn before:bg-white text-white text-sm relative"
+                      style="text-transform:lowercase"
+                    >
+                      ${link.name}
+                    </a>
+                  `
+                  )
+                  .join("")}
               </div>
             </nav>
           </div>
@@ -122,6 +106,37 @@ class Header {
         icon.dataset.state === "open" && closeNav();
       }
     });
+  }
+
+  #_handleActiveMenu() {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const link = document.querySelector(
+            `a[href="#${entry.target.id.toLowerCase()}"]`
+          );
+
+          if (entry.isIntersecting) {
+            link.classList.add("active-link");
+          } else {
+            link.classList.remove("active-link");
+          }
+        });
+      },
+      {
+        rootMargin: "-100px",
+        threshold: [0.2, 1],
+      }
+    );
+
+    const els = [
+      document.getElementById("home"),
+      document.getElementById("about"),
+      document.getElementById("contact"),
+      document.getElementById("projects"),
+    ];
+
+    Array.from(els).forEach((el) => observer.observe(el));
   }
 }
 

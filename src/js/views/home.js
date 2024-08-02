@@ -29,7 +29,7 @@ class Home extends View {
     this.#_container.append(
       hero.render(),
       about.render(),
-      experience.render(),
+      // experience.render(),
       projects.render(this.#_data.projects),
       contact.render()
     );

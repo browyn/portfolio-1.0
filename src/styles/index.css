@@ -27,12 +27,14 @@
     @apply uppercase font-medium inline-flex items-center gap-2.5 relative;
   }
 
-  .btn::before {
+  .btn::before,
+  .active-link::before {
     content: var(--tw-content);
     @apply h-[0.125rem] w-0 absolute bottom-0 bg-black;
   }
 
-  .btn:hover::before {
+  .btn:hover::before,
+  .active-link::before {
     @apply w-[30px] transition-all duration-75;
   }
 }

@@ -37,6 +37,14 @@ export const data = {
   ],
   projects: [
     {
+      title: "Portfolio 1.0",
+      type: "Website",
+      tags: ["HTML5", "CSS", "Tailwindcss", "JavaScript"],
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque totam accusantium eveniet enim minima at ab maxime mollitia vitae culpa sit recusandae, error esse nisi. Nostrum facere eos in ipsum.",
+      githubUrl: "",
+    },
+    {
       title: "Eval360",
       type: "Web App",
       tags: ["React", "JavaScript"],
@@ -51,6 +59,31 @@ export const data = {
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque totam accusantium eveniet enim minima at ab maxime mollitia vitae culpa sit recusandae, error esse nisi. Nostrum facere eos in ipsum.",
       githubUrl: "",
+    },
+    {
+      title: "Eval360",
+      type: "Web App",
+      tags: ["React", "JavaScript"],
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque totam accusantium eveniet enim minima at ab maxime mollitia vitae culpa sit recusandae, error esse nisi. Nostrum facere eos in ipsum.",
+      githubUrl: "",
+    },
+  ],
+  footerLinks: [
+    {
+      name: "Home",
+    },
+    {
+      name: "About",
+    },
+    // {
+    //   name: "Experience",
+    // },
+    {
+      name: "Projects",
+    },
+    {
+      name: "Contact",
     },
   ],
 };

@@ -5,7 +5,7 @@ class Hero {
 
   constructor() {
     this.#_el = document.createElement("section");
-    this.#_el.id = "hero";
+    this.#_el.id = "home";
   }
 
   render() {

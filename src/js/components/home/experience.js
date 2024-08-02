@@ -19,10 +19,7 @@ class Experience {
           <div class="flex flex-col gap-2">
             <div class="flex items-center gap-3" data-aos="fade-up">
               <h2 class="font-bold">02. / Experience</h2>
-              <button type="button">
-                <i class="ph ph-link font-semibold text-lg"></i>
-              </button>
-            </div>
+             </div>
             <p data-aos="fade-up">Take a surf through my past right up until now.</p>
           </div>
 
