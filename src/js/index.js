@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function App() {
     case "/":
       controller.index();
       break;
-
+    // Hoping to add more cases (pages) with time, for now, just a single page portfolio
     default:
       return;
   }
