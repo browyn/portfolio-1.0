@@ -4,6 +4,7 @@ import "@phosphor-icons/web";
 import header from "./components/header";
 import controller from "./controller";
 import { getPath } from "./helpers";
+import footer from "./components/footer";
 
 document.addEventListener("DOMContentLoaded", function App() {
   controller.init();
@@ -19,5 +20,6 @@ document.addEventListener("DOMContentLoaded", function App() {
       return;
   }
 
-  header.registerEventListeneres();
+  header.registerEventListeners();
+  footer.registerEventListeners();
 });

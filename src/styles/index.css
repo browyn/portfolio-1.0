@@ -13,7 +13,7 @@
 
   a,
   button {
-    @apply opacity-75 transition-opacity duration-100 ease-linear;
+    @apply opacity-75 transition-opacity duration-150 ease-linear;
   }
 
   a:hover,
@@ -27,14 +27,12 @@
     @apply uppercase font-medium inline-flex items-center gap-2.5 relative;
   }
 
-  .btn::before,
-  .active-link::before {
+  .btn::before {
     content: var(--tw-content);
-    @apply h-[0.125rem] absolute bottom-0 bg-black w-1;
+    @apply h-[0.125rem] absolute bottom-0 bg-black w-2;
   }
 
-  .btn:hover::before,
-  .active-link::before {
-    @apply w-[30px] transition-all duration-75;
+  .btn:hover::before {
+    @apply w-[30px] transition-all duration-150 ease-in-out;
   }
 }

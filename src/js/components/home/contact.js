@@ -68,7 +68,7 @@ class Contact {
     return socials
       .map((social) => {
         return `
-          <a href="${social.link}" class="text-black">
+          <a href="${social.link}" class="text-black hover:scale-125 transition-transform ease-in-out duration-150" title="${social.name}">
             <i class="${social.icon} text-2xl"></i>
           </a>
         `;

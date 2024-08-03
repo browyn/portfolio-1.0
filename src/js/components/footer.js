@@ -14,20 +14,33 @@ class Footer {
     return this.#_el;
   }
 
+  registerEventListeners() {
+    this.#_handleScrollToTop();
+  }
+
   #_generateMarkup() {
-    return `
-        <div class="w-full bg-black"  data-aos="fade-in">
-            <div class="container py-32 flex flex-col gap-8 justify-center text-center">
-                <span class="text-sm text-white">
-                    &copy; ${new Date().getFullYear()} Designed & Developed by 
-                    <a href="">Browyn Louis</a>
-                </span>
-                <div class="flex items-center gap-4 text-white justify-center text-center flex-wrap">
-                    ${this.#_renderSocials()}
-                </div>
+    return `      
+        <div class="w-full bg-black" data-aos="fade-in">
+          <div class="container py-32 flex flex-col gap-8 justify-center text-center">
+            <span class="text-sm text-white">
+              &copy; ${new Date().getFullYear()} Designed & Developed by
+              <a href="">Browyn Louis</a>
+            </span>
+            <div class="flex items-center gap-4 text-white justify-center text-center flex-wrap">
+              ${this.#_renderSocials()}
             </div>
+          </div>
         </div>
-      `;
+        <button
+          id="scroll-to-top"
+          title="Back to top"
+          type="button"
+          class="text-base fixed items-center gap-3 tracking-widest -rotate-90 opacity-100 drop-shadow-2xl bottom-10 -right-1 font-semibold hidden z-20 hover:scale-110 transition-all ease-linear duration-100"
+        >
+          <span>TOP</span>
+          <i class="ph ph-caret-double-right"></i>
+        </button>
+    `;
   }
 
   #_renderSocials() {
@@ -38,6 +51,33 @@ class Footer {
         return `<a href="${social.link}" class="text-white btn before:bg-white" style="text-transform:capitalize">${social.name}</a>`;
       })
       .join("/");
+  }
+
+  #_handleScrollToTop() {
+    const scrollButton = document.getElementById("scroll-to-top");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        scrollButton.classList.remove("hidden");
+        scrollButton.classList.add("flex");
+      } else {
+        scrollButton.classList.remove("flex");
+        scrollButton.classList.add("hidden");
+      }
+    });
+
+    scrollButton.addEventListener("click", () => {
+      window.scrollTo(0, 0);
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) scrollButton.classList.add("text-white");
+        else scrollButton.classList.remove("text-white");
+      });
+    });
+
+    observer.observe(this.#_el);
   }
 }
 

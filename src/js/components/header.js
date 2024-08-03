@@ -14,7 +14,7 @@ class Header {
     return this.#_el;
   }
 
-  registerEventListeneres() {
+  registerEventListeners() {
     this.#_handleMenu();
     this.#_handleActiveMenu();
   }
@@ -23,9 +23,9 @@ class Header {
     const { footerLinks } = data;
 
     return `
-      <div class="w-full fixed z-10">
+      <div class="w-full fixed z-10 border-b border-b-gray-400 sm:border-b-0">
         <div
-          class="container flex z-10 items-center justify-between py-4 bg-white"
+          class="container flex z-10 items-center justify-between py-4 bg-white sm:border-0"
           data-aos="slide-down"
         >
           <h1 class="font-poppins font-semibold text-lg">B.</h1>
@@ -33,14 +33,15 @@ class Header {
           <!-- Menu Icon -->
 
           <div class="relative">
-            <div
-              class="cursor-pointer flex flex-col gap-2.5 items-end"
+            <button
+              type="button"
+              class="flex flex-col gap-2.5 items-end"
               id="menu-icon"
               data-state="closed"
             >
               <div class="w-10 h-[1px] bg-black transition-all ease-linear duration-150"></div>
               <div class="w-[35px] h-[1px] bg-black transition-all ease-linear duration-150"></div>
-            </div>
+            </button>
 
             <nav
               class="absolute bg-black top-8 p-3 z-10 right-0 w-[150px] scale-0 transition-transform ease-linear duration-100 shadow-2xl"
@@ -54,7 +55,7 @@ class Header {
                       `
                     <a
                       href="#${link.name.toLowerCase()}"
-                      class="btn before:bg-white text-white text-sm relative"
+                      class="btn before:bg-white text-white text-sm relative before:w-0"
                       style="text-transform:lowercase"
                     >
                       ${link.name}
@@ -117,9 +118,9 @@ class Header {
           );
 
           if (entry.isIntersecting) {
-            link.classList.add("active-link");
+            link.classList.add("before:w-8", "opacity-100");
           } else {
-            link.classList.remove("active-link");
+            link.classList.remove("before:w-8", "opacity-100");
           }
         });
       },

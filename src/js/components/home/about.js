@@ -39,7 +39,7 @@ class About {
                 .join("<br />")}
                 
               <div class="mt-10 md:text-right" data-aos="fade-up">
-                <button class="btn">
+                <button class="btn" title="Download my resume">
                   Download my resume
                   <i class="ph ph-file-arrow-down text-lg"></i>
                 </button>
