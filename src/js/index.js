@@ -8,15 +8,6 @@ import { getPath, initializeTheme } from "./helpers";
 
 initializeTheme();
 
-const theme = localStorage.getItem("theme");
-
-if (theme) {
-  document.documentElement.setAttribute("data-theme", theme);
-} else {
-  const theme = document.documentElement.dataset.theme;
-  localStorage.setItem("theme", theme);
-}
-
 document.addEventListener("DOMContentLoaded", function App() {
   controller.init();
 
