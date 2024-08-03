@@ -2,9 +2,11 @@ import "aos/dist/aos.css";
 import "@phosphor-icons/web";
 
 import header from "./components/header";
-import controller from "./controller";
-import { getPath } from "./helpers";
 import footer from "./components/footer";
+import controller from "./controller";
+import { getPath, initializeTheme } from "./helpers";
+
+initializeTheme();
 
 const theme = localStorage.getItem("theme");
 
