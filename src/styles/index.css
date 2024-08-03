@@ -3,8 +3,22 @@
 @tailwind components;
 
 @layer base {
+  [data-theme="dark"] {
+    --primary: rgb(25, 30, 30);
+    --secondary: rgb(243 244 246);
+  }
+
+  [data-theme="light"] {
+    --primary: rgb(255 255 255);
+    --secondary: rgb(23, 23, 22);
+  }
+
   html {
     scroll-behavior: smooth;
+  }
+
+  body {
+    color: var(--secondary);
   }
 
   * {
@@ -29,7 +43,7 @@
 
   .btn::before {
     content: var(--tw-content);
-    @apply h-[0.125rem] absolute bottom-0 bg-black w-2;
+    @apply h-[0.125rem] absolute bottom-0 bg-secondary w-2;
   }
 
   .btn:hover::before {

@@ -16,6 +16,10 @@ module.exports = {
       center: true,
     },
     extend: {
+      colors: {
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+      },
       fontFamily: {
         poppins: "Poppins, sans-serif",
       },

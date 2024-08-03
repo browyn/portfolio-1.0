@@ -17,34 +17,38 @@ class Header {
   registerEventListeners() {
     this.#_handleMenu();
     this.#_handleActiveMenu();
+    this.#_handleThemeToggle();
   }
 
   #_generateMarkup() {
     const { footerLinks } = data;
 
     return `
-      <div class="w-full fixed z-10 border-b border-b-gray-400 sm:border-b-0">
+      <div class="w-full fixed z-10">
         <div
-          class="container flex z-10 items-center justify-between py-4 bg-white sm:border-0"
+          class="container flex z-10 items-center justify-between py-4 backdrop-blur-md"
           data-aos="slide-down"
         >
           <h1 class="font-poppins font-semibold text-lg">B.</h1>
+
+          ${this.#_renderThemeToggle()}
 
           <!-- Menu Icon -->
 
           <div class="relative">
             <button
               type="button"
-              class="flex flex-col gap-2.5 items-end"
+              class="flex p-2 flex-col gap-2.5 items-end"
               id="menu-icon"
               data-state="closed"
+              title="menu-icon"
             >
-              <div class="w-10 h-[1px] bg-black transition-all ease-linear duration-300"></div>
-              <div class="w-[35px] h-[1px] bg-black transition-all ease-linear duration-300"></div>
+              <div class="w-10 h-[1px] bg-secondary transition-all ease-linear duration-300"></div>
+              <div class="w-[35px] h-[1px] bg-secondary transition-all ease-linear duration-300"></div>
             </button>
 
             <nav
-              class="absolute bg-black top-8 p-3 z-10 right-0 w-[150px] scale-0 transition-transform ease-linear duration-100 shadow-2xl"
+              class="absolute bg-primary top-8 p-3 z-10 right-0 w-[150px] scale-0 transition-transform ease-linear duration-100 shadow-xl"
               data-state="open"
               id="nav"
             >
@@ -55,7 +59,7 @@ class Header {
                       `
                     <a
                       href="#${link.name.toLowerCase()}"
-                      class="btn before:bg-white text-white text-sm relative before:w-0"
+                      class="btn text-sm relative before:w-0"
                       style="text-transform:lowercase"
                     >
                       ${link.name}
@@ -69,6 +73,47 @@ class Header {
         </div>
       </div>
     `;
+  }
+
+  #_renderThemeToggle() {
+    const theme = localStorage.getItem("theme");
+
+    return `
+      <button
+        type="button"
+        title="Theme toggle"
+        data-state="${theme}"
+        data-role="theme-toggle"
+        class="p-1.5 rounded-full bg-secondary justify-center items-center flex ml-10"
+      >
+        <i class="ph ${
+          theme == "dark" ? "ph-sun" : "ph-moon"
+        } text-primary font-semibold text-lg"></i>
+      </button>
+    `;
+  }
+
+  #_handleThemeToggle() {
+    const toggle = document.querySelector("[data-role='theme-toggle']");
+
+    toggle.addEventListener("click", () => {
+      const theme = toggle.getAttribute("data-state");
+      const newTheme = theme === "light" ? "dark" : "light";
+
+      localStorage.setItem("theme", newTheme);
+      toggle.setAttribute("data-state", newTheme);
+      document.documentElement.setAttribute("data-theme", newTheme);
+
+      if (newTheme == "light") {
+        toggle.firstElementChild.classList.add("ph-moon");
+        toggle.firstElementChild.classList.remove("ph-sun");
+
+        return;
+      }
+
+      toggle.firstElementChild.classList.add("ph-sun");
+      toggle.firstElementChild.classList.remove("ph-moon");
+    });
   }
 
   #_handleMenu() {

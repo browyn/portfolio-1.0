@@ -31,7 +31,7 @@ class Contact {
           </div>
 
           <div
-            class="flex gap-4 items-center justify-center flex-wrap text-black/80 text-center"
+            class="flex gap-4 items-center justify-center flex-wrap text-center"
             data-aos="fade-up"
             data-aos-duration="2000"
           >
@@ -51,7 +51,7 @@ class Contact {
                 id="email"
                 name="email"
                 type="email"
-                class="text-center border-b border-b-black p-2 h-10 placeholder:text-sm outline-none"
+                class="text-center border-b border-b-secondary placeholder:text-secondary bg-transparent p-2 h-10 placeholder:text-sm outline-none"
                 placeholder="Your email address"
               />
               <button class="btn">Subscribe</button>
@@ -68,7 +68,7 @@ class Contact {
     return socials
       .map((social) => {
         return `
-          <a href="${social.link}" class="text-black hover:scale-125 transition-transform ease-in-out duration-150" title="${social.name}">
+          <a href="${social.link}" class="hover:scale-125 transition-transform ease-in-out duration-150" title="${social.name}">
             <i class="${social.icon} text-2xl"></i>
           </a>
         `;

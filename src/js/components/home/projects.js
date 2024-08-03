@@ -18,7 +18,7 @@ class Projects {
 
   #_generateMarkup() {
     return `
-      <div class="w-full bg-gray-50/40">
+      <div class="w-full">
         <div class="flex gap-10 flex-col py-16 container">
           <div class="flex flex-col gap-2">
             <div class="flex items-center gap-3" data-aos="fade-up">
@@ -61,9 +61,11 @@ class Projects {
 
   #_generateProjectDetailsMarkup(project, index) {
     const { title, type, tags, description, githubUrl } = project;
-
     return `
-      <div class="w-full flex p-2 flex-col-reverse sm:flex-row sm:even:flex-row-reverse items-center relative">
+      <div
+        title="https://github.com/browyn"
+        class="cursor-pointer hover:scale-105 transition-transform duration-500 w-full flex p-2 flex-col-reverse sm:flex-row sm:even:flex-row-reverse items-center relative"
+      >
         <article class="flex-1 flex flex-col gap-5" data-aos="zoom-in">
           <div class="flex flex-col gap-1 relative py-8 ${
             isEven(index) && "items-end"
@@ -71,9 +73,12 @@ class Projects {
             <h3 class="font-bold text-sm">${title}</h3>
             <span class="text-xs">${type}</span>
           </div>
-          <p align="justify" class="font-light text-sm shadow-lg relative z-[1] bg-white p-6 ${
-            isEven(index) ? "sm:pl-10" : "sm:pr-10"
-          }">
+          <p 
+            align="justify" 
+            class="text-sm shadow-lg bg-secondary text-primary font-medium p-6 z-10 ${
+              isEven(index) ? "sm:pl-10" : "sm:pr-10"
+            }"
+          >
             ${description}
           </p>
           <div class="w-full flex items-center gap-2 flex-wrap ${
@@ -82,7 +87,7 @@ class Projects {
             ${tags
               .map(
                 (tag) =>
-                  `<span class="bg-gray-100 rounded-2xl py-1 px-2 text-xs">
+                  `<span class="bg-secondary rounded-2xl py-1 px-2 text-xs text-primary font-semibold">
                   ${tag}
                 </span>`
               )
@@ -97,9 +102,11 @@ class Projects {
             </a>
           </div>
         </article>
-        <div class="h-[300px] -mb-6 sm:mb-0 sm:even:-mr-8 sm:flex-1 sm:-ml-8 bg-black/10 hover:scale-[105%] transition-all duration-200 w-[80%] mx-auto relative z-[1]" data-aos="${
-          isEven(index) ? "fade-up" : "fade-up"
-        }"></div>
+        <div 
+          class="h-[300px] -mb-6 sm:mb-0 sm:even:-mr-8 sm:flex-1 sm:-ml-8 bg-black/10 w-[80%] mx-auto" 
+          data-aos="${isEven(index) ? "fade-up" : "fade-up"}"
+        >
+        </div>
       </div>
     `;
   }

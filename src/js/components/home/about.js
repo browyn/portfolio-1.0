@@ -18,7 +18,7 @@ class About {
     const { about } = data;
 
     return `
-      <div class="w-full bg-gray-50/40">
+      <div class="w-full">
         <div class="flex gap-10 flex-col py-16 container">
           <div class="flex flex-col gap-2">
             <div class="flex items-center gap-3" data-aos="fade-up">

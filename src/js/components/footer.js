@@ -20,13 +20,13 @@ class Footer {
 
   #_generateMarkup() {
     return `      
-        <div class="w-full bg-black" data-aos="fade-in">
+        <div class="w-full bg-primary" data-aos="fade-in">
           <div class="container py-32 flex flex-col gap-8 justify-center text-center">
-            <span class="text-sm text-white">
+            <span class="text-sm">
               &copy; ${new Date().getFullYear()} Designed & Developed by
               <a href="">Browyn Louis</a>
             </span>
-            <div class="flex items-center gap-4 text-white justify-center text-center flex-wrap">
+            <div class="flex items-center gap-4 justify-center text-center flex-wrap">
               ${this.#_renderSocials()}
             </div>
           </div>
@@ -48,7 +48,7 @@ class Footer {
 
     return socials
       .map((social) => {
-        return `<a href="${social.link}" class="text-white btn before:bg-white" style="text-transform:capitalize">${social.name}</a>`;
+        return `<a href="${social.link}" class="btn" style="text-transform:capitalize">${social.name}</a>`;
       })
       .join("/");
   }
@@ -69,15 +69,6 @@ class Footer {
     scrollButton.addEventListener("click", () => {
       window.scrollTo(0, 0);
     });
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) scrollButton.classList.add("text-white");
-        else scrollButton.classList.remove("text-white");
-      });
-    });
-
-    observer.observe(this.#_el);
   }
 }
 

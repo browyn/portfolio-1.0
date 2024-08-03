@@ -30,7 +30,7 @@ class Hero {
               </p>
             </div>
             <div 
-                class="flex gap-4 mt-10 items-center flex-wrap text-black/80" 
+                class="flex gap-4 mt-10 items-center flex-wrap" 
                 data-aos="fade-up" 
                 data-aos-duration="2000"
             >
@@ -59,7 +59,7 @@ class Hero {
     return socials
       .map((social) => {
         return `
-          <a href="${social.link}" class="text-black hover:scale-125 transition-transform ease-in-out duration-150" title="${social.name}">
+          <a href="${social.link}" class="hover:scale-125 transition-transform ease-in-out duration-150" title="${social.name}">
             <i class="${social.icon} text-2xl"></i>
           </a>
         `;

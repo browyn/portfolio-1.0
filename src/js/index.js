@@ -6,6 +6,15 @@ import controller from "./controller";
 import { getPath } from "./helpers";
 import footer from "./components/footer";
 
+const theme = localStorage.getItem("theme");
+
+if (theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+} else {
+  const theme = document.documentElement.dataset.theme;
+  localStorage.setItem("theme", theme);
+}
+
 document.addEventListener("DOMContentLoaded", function App() {
   controller.init();
 
