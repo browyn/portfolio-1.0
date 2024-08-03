@@ -20,11 +20,22 @@ class Experience {
             <div class="flex items-center gap-3" data-aos="fade-up">
               <h2 class="font-bold">02. / Experience</h2>
              </div>
-            <p data-aos="fade-up">Take a surf through my past right up until now.</p>
+            <p data-aos="fade-up">Walk down my memory lane of experience with me.</p>
           </div>
 
+          <div class="flex w-full flex-col">
+            ${Array.from({ length: 6 })
+              .map(() => this.#_generateExperienceMarkup())
+              .join("")}   
+          </div>
         </div>
       </div>
+    `;
+  }
+
+  #_generateExperienceMarkup() {
+    return `
+
     `;
   }
 }

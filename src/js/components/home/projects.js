@@ -22,7 +22,7 @@ class Projects {
         <div class="flex gap-10 flex-col py-16 container">
           <div class="flex flex-col gap-2">
             <div class="flex items-center gap-3" data-aos="fade-up">
-              <h2 class="font-bold">02. / Crafted with love & code</h2>
+              <h2 class="font-bold">03. / Crafted with love & code</h2>
             </div>
             <p data-aos="fade-up">Here are some of my recent projects.</p>
           </div>
@@ -30,9 +30,11 @@ class Projects {
           <div class="w-full flex-col gap-8 flex">
             ${
               this.#_projects.length > 0
-                ? this.#_projects.map((project, index) =>
-                    this.#_generateProjectDetailsMarkup(project, index + 1)
-                  ).join("")
+                ? this.#_projects
+                    .map((project, index) =>
+                      this.#_generateProjectDetailsMarkup(project, index + 1)
+                    )
+                    .join("")
                 : `<div class="w-full flex items-center justify-center flex-col gap-2 py-10 text-center">
                   <h3 class="font-bold text-sm">No Projects Yet!</h3>
                   <span class="text-xs">

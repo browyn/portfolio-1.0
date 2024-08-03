@@ -39,8 +39,8 @@ class Header {
               id="menu-icon"
               data-state="closed"
             >
-              <div class="w-10 h-[1px] bg-black transition-all ease-linear duration-150"></div>
-              <div class="w-[35px] h-[1px] bg-black transition-all ease-linear duration-150"></div>
+              <div class="w-10 h-[1px] bg-black transition-all ease-linear duration-300"></div>
+              <div class="w-[35px] h-[1px] bg-black transition-all ease-linear duration-300"></div>
             </button>
 
             <nav
@@ -79,8 +79,8 @@ class Header {
       navbar.classList.remove("scale-[100%]");
       navbar.classList.add("scale-0");
 
-      icon.firstElementChild.classList.remove("rotate-45");
-      icon.lastElementChild.classList.remove("rotate-[135deg]");
+      icon.firstElementChild.classList.remove("-rotate-45");
+      icon.lastElementChild.classList.remove("-rotate-[135deg]");
       icon.setAttribute("data-state", "closed");
     }
 
@@ -93,8 +93,8 @@ class Header {
             navbar.classList.remove("scale-0");
             navbar.classList.add("scale-[100%]");
 
-            icon.firstElementChild.classList.toggle("rotate-45");
-            icon.lastElementChild.classList.toggle("rotate-[135deg]");
+            icon.firstElementChild.classList.toggle("-rotate-45");
+            icon.lastElementChild.classList.toggle("-rotate-[135deg]");
             icon.setAttribute("data-state", "open");
             break;
           case "open":

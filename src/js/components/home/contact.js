@@ -23,7 +23,7 @@ class Contact {
               class="flex items-center gap-3 justify-center text-center"
               data-aos="fade-up"
             >
-              <h2 class="font-bold">03. / Contact Me</h2>
+              <h2 class="font-bold">04. / Contact Me</h2>
             </div>
             <p data-aos="fade-up">
               Want to discuss a project or say hi? You can reach out below
