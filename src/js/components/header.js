@@ -38,7 +38,7 @@ class Header {
           <div class="relative">
             <button
               type="button"
-              class="flex p-2 flex-col gap-2.5 items-end"
+              class="flex p-2 flex-col gap-2.5 items-end lg:hidden"
               id="menu-icon"
               data-state="closed"
               title="menu-icon"
@@ -48,19 +48,19 @@ class Header {
             </button>
 
             <nav
-              class="absolute bg-primary top-8 p-3 z-10 right-0 w-[150px] scale-0 transition-transform ease-linear duration-100 shadow-xl"
+              class="absolute bg-grey top-10 p-4 z-10 right-0 scale-0 w-[250px] transition-all ease-linear duration-100 shadow-xl lg:bg-transparent lg:scale-100 lg:relative lg:shadow-none lg:right-0 lg:top-0 lg:p-0 lg:w-auto"
               data-state="open"
               id="nav"
             >
-              <div class="flex flex-col gap-3.5">
+              <div class="flex flex-col gap-6 lg:gap-4 lg:flex-row">
                 ${navLinks
                   .map(
                     (link) =>
                       `
                     <a
                       href="#${link.name.toLowerCase()}"
-                      class="btn text-sm relative before:w-0"
-                      style="text-transform:lowercase"
+                      class="btn text-sm relative before:w-0 lg:text-secondary font-bold"
+                      style="text-transform:capitalize;font-weight:600"
                     >
                       ${link.name}
                     </a>
@@ -84,7 +84,7 @@ class Header {
         title="Theme toggle"
         data-state="${theme}"
         data-role="theme-toggle"
-        class="p-1.5 rounded-full bg-secondary justify-center items-center flex ml-10"
+        class="p-1.5 rounded-full bg-secondary justify-center items-center flex ml-10 lg:ml-[250px]"
       >
         <i class="ph ${
           theme == "dark" ? "ph-sun" : "ph-moon"
@@ -176,10 +176,10 @@ class Header {
     );
 
     const els = [
-      document.getElementById("home"),
       document.getElementById("about"),
       document.getElementById("contact"),
       document.getElementById("projects"),
+      document.getElementById("experience"),
     ];
 
     Array.from(els).forEach((el) => observer.observe(el));

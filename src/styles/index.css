@@ -6,11 +6,13 @@
   [data-theme="dark"] {
     --primary: rgb(25, 30, 30);
     --secondary: rgb(243 244 246);
+    --grey: rgb(50, 60, 60);
   }
 
   [data-theme="light"] {
     --primary: rgb(255 255 255);
     --secondary: rgb(23, 23, 22);
+    --grey: rgb(200, 210, 210);
   }
 
   html {

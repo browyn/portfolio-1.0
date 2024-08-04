@@ -70,15 +70,15 @@ export const data = {
     },
   ],
   navLinks: [
-    {
-      name: "Home",
-    },
+    // {
+    //   name: "Home",
+    // },
     {
       name: "About",
     },
-    // {
-    //   name: "Experience",
-    // },
+    {
+      name: "Experience",
+    },
     {
       name: "Projects",
     },

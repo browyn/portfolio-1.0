@@ -18,15 +18,18 @@ class Experience {
         <div class="flex gap-10 flex-col py-16 container">
           <div class="flex flex-col gap-2">
             <div class="flex items-center gap-3" data-aos="fade-up">
-              <h2 class="font-bold">02. / Experience</h2>
+              <h2 class="font-bold">02. / Experience & Expertise</h2>
              </div>
-            <p data-aos="fade-up">Walk down my memory lane of experience with me.</p>
+            <p data-aos="fade-up">Walk down my tree of experience with me.</p>
           </div>
 
-          <div class="flex w-full flex-col">
-            ${Array.from({ length: 6 })
-              .map(() => this.#_generateExperienceMarkup())
-              .join("")}   
+          <div class="flex w-full flex-col lg:flex-row">
+            <div class="flex-1">
+
+            </div>
+            <div class="flex-1">
+              
+            </div>
           </div>
         </div>
       </div>
