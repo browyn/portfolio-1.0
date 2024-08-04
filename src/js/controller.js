@@ -20,6 +20,7 @@ class Controller {
 
   index() {
     home.render({
+      experiences: data.experiences,
       projects: data.projects,
     });
   }

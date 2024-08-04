@@ -69,21 +69,48 @@ export const data = {
       githubUrl: "",
     },
   ],
+  experiences: [
+    {
+      place: "Freelancer @ Full Stack Web Developer",
+      duration: ["2023", "Present"],
+      role: "Web Developer",
+      location: "Remote",
+    },
+    {
+      place: "University of Benin",
+      duration: ["2023"],
+      role: "Bsc. Animal & Environmental Biology",
+      location: "Benin City, Nigeria",
+    },
+    {
+      place: "Eval360",
+      duration: ["2022", "2023"],
+      role: "Lead Software Developer",
+      location: "Remote, Nigeria",
+    },
+    {
+      place: "HNGi9 Internship",
+      duration: ["2022"],
+      role: "Web Developer & Team Lead",
+      location: "Remote, Lagos, Nigeria",
+    },
+    {
+      place: "NCEE",
+      duration: ["2022"],
+      role: "Intern & Web Development tutor",
+      location: "Benin City, Nigeria",
+    },
+    {
+      place: "Federal Government Collge, Warri",
+      duration: ["2017"],
+      role: "Senior School Certificate (WAEC)",
+      location: "Warri, Nigeria",
+    },
+  ],
   navLinks: [
-    // {
-    //   name: "Home",
-    // },
-    {
-      name: "About",
-    },
-    {
-      name: "Experience",
-    },
-    {
-      name: "Projects",
-    },
-    {
-      name: "Contact",
-    },
+    { name: "About" },
+    { name: "Experience" },
+    { name: "Projects" },
+    { name: "Contact" },
   ],
 };
