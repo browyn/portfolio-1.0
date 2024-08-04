@@ -24,7 +24,7 @@ class Header {
     const { navLinks } = data;
 
     return `
-      <div class="w-full fixed z-10 shadow-md">
+      <div class="w-full fixed z-10 shadow-sm">
         <div
           class="container flex z-10 items-center justify-between py-5 bg-primary"
           data-aos="slide-down"
