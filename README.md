@@ -1,6 +1,6 @@
 <div style="text-align:center;">
 
- <h1>Browyn Louis</>
+ <h1>Browyn Louis</h1>
  <p>
   Welcome to my portfolio project! This website showcases my work, provides information about me, and details my experience. It's built using modern web technologies to ensure a smooth and intuitive user experience.
  </p>
