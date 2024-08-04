@@ -2,9 +2,11 @@
 
  <h1>Browyn Louis</h1>
  <p>
-  Welcome to my portfolio project! This website showcases my work, provides information about me, and details my experience. It's built using modern web technologies to ensure a smooth and intuitive user experience.
+  Welcome to the 1st iteration of my portfolio!.
  </p>
-
+ <p>
+  Built with HTMl,TailwindCSS,JavaScript, bundled with Parcel and deployed on <a href="https://vercel.com">Vercel</a>
+ </p>
 </div>
 
 
