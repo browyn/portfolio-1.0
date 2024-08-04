@@ -21,12 +21,12 @@ class Header {
   }
 
   #_generateMarkup() {
-    const { footerLinks } = data;
+    const { navLinks } = data;
 
     return `
       <div class="w-full fixed z-10">
         <div
-          class="container flex z-10 items-center justify-between py-4 backdrop-blur-md"
+          class="container flex z-10 items-center justify-between py-5 bg-primary"
           data-aos="slide-down"
         >
           <h1 class="font-poppins font-semibold text-lg">B.</h1>
@@ -53,7 +53,7 @@ class Header {
               id="nav"
             >
               <div class="flex flex-col gap-3.5">
-                ${footerLinks
+                ${navLinks
                   .map(
                     (link) =>
                       `

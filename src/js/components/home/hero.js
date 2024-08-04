@@ -46,7 +46,7 @@ class Hero {
             </div>
           </div>
         </div>
-        <div class="animate-bounce">
+        <div class="animate-bounce -mt-20">
           <i class="ph ph-caret-double-down text-[48px]"></i>
         </div>
       </div>

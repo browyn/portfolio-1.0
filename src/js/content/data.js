@@ -69,7 +69,7 @@ export const data = {
       githubUrl: "",
     },
   ],
-  footerLinks: [
+  navLinks: [
     {
       name: "Home",
     },

@@ -1,25 +1,13 @@
-# My Portfolio Project
+<div align="center">
 
-Welcome to my portfolio project! This website showcases my work, provides information about me, and details my experience. It's built using modern web technologies to ensure a smooth and intuitive user experience.
-
-## Table of Contents
-
-- [Technologies Used](#technologies-used)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Folder Structure](#folder-structure)
-- [License](#license)
-
-## Technologies Used
-
-This portfolio is built with the following technologies:
-
-- **HTML**: For the structure of the web pages.
-- **CSS**: For styling the components.
-- **JavaScript**: For interactive elements.
-- **TypeScript**: For adding type safety and enhancing the JavaScript code.
-- **Tailwind CSS**: For utility-first styling and responsive design.
-- **Parcel**: For bundling the project and managing assets.
+ <h1>Browyn Louis</h1>
+ <p>
+  Welcome to the 1st iteration of <strong>my portfolio!</strong>.
+ </p>
+ <p>
+  Built with HTMl,TailwindCSS,JavaScript, bundled with Parcel and deployed on <a href="https://vercel.com">Vercel</a>
+ </p>
+</div>
 
 ## Features
 
@@ -28,7 +16,11 @@ This portfolio is built with the following technologies:
 - **Experience**: Details of my work experience and skills.
 - **Intuitive Design**: A user-friendly interface with a responsive layout to ensure a great experience across devices.
 
-## Getting Started
+## 🚨 Forking this repo (please read!)
+
+Yes, you can fork this repo, but please give me proper credit by linking back to [browyn.vercel.app](https://browyn.vercel.app). Thanks!
+
+## Installation & Setup
 
 To get a local copy of this project up and running, follow these steps:
 
@@ -65,7 +57,3 @@ This will start Parcel and open the project in your default web browser.
 ```
 
 This will create an optimized version of your portfolio in the dist folder.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
