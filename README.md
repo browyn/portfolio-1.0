@@ -7,6 +7,18 @@
  <p>
   Built with HTMl,TailwindCSS,JavaScript, bundled with Parcel and deployed on <a href="https://vercel.com">Vercel</a>
  </p>
+ 
+</div>
+
+<hr />
+
+![portfolio-demo-dark](https://github.com/user-attachments/assets/7eb0ebd2-588c-4441-b571-9967ccfaffe6)
+
+![portfolio-demo-light](https://github.com/user-attachments/assets/be30ad92-7f52-42dd-b314-c191eb3baa72)
+
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/b5615661-4fed-4133-bedd-91158347167d" alt="portfolio-demo-dark-mobile" />
+ <img src="https://github.com/user-attachments/assets/32211aad-cfd5-4daf-8077-3747ba2ff62d" alt="portfolio-demo-light-mobile" />
 </div>
 
 ## Features
@@ -15,6 +27,7 @@
 - **About**: Information about who I am and my professional background.
 - **Experience**: Details of my work experience and skills.
 - **Intuitive Design**: A user-friendly interface with a responsive layout to ensure a great experience across devices.
+- **Theme**: Supports light and dark mode.
 
 ## 🚨 Forking this repo (please read!)
 

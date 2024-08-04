@@ -171,7 +171,7 @@ class Header {
       },
       {
         rootMargin: "-100px",
-        threshold: [0],
+        threshold: [0.2],
       }
     );
 
