@@ -24,9 +24,9 @@ class Header {
     const { navLinks } = data;
 
     return `
-      <div class="w-full fixed z-10">
+      <div class="w-full fixed z-10 shadow-md">
         <div
-          class="container flex z-10 items-center justify-between py-5 bg-primary shadow-lg"
+          class="container flex z-10 items-center justify-between py-5 bg-primary"
           data-aos="slide-down"
         >
           <h1 class="font-poppins font-semibold text-lg">B.</h1>
