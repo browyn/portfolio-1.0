@@ -64,7 +64,7 @@ class Experience {
   #_generateExperienceMarkup(experience, sn) {
     return `
       <div 
-        class="flex flex-col gap-4 p-4 pl-0 hover:scale-125 transition-transform duration-300 ease-linear ${
+        class="flex flex-col gap-4 p-4 pl-0 ${
           isEven(sn) ? "self-start" : "self-end"
         }"
       >

@@ -45,11 +45,10 @@ class Projects {
           </div>
 
           <div class="flex flex-col gap-6 justify-end mt-10">
-            <span>THERE'S MORE!</span>
 
             <div>
-              <button class="font-bold gap-5 lowercase flex items-center">
-                <span>Want to see some more?</span>
+              <button class="font-bold gap-5 flex items-center btn" style="font-weight:700;text-transform:lowercase">
+                <span>there's more to see?</span>
                 <i class="ph ph-arrow-right text-2xl"></i>
               </button>
             </div>

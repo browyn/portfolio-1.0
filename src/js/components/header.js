@@ -24,7 +24,7 @@ class Header {
     const { navLinks } = data;
 
     return `
-      <div class="w-full fixed z-10 drop-shadow-sm">
+      <div class="w-full shadow-sm fixed z-10">
         <div
           class="container flex z-10 items-center justify-between py-5 bg-primary"
           data-aos="slide-down"
@@ -84,7 +84,7 @@ class Header {
         title="Theme toggle"
         data-state="${theme}"
         data-role="theme-toggle"
-        class="p-1.5 rounded-full bg-secondary justify-center items-center flex ml-10 lg:ml-[250px]"
+        class="p-1.5 rounded-full bg-secondary justify-center items-center flex ml-10 lg:ml-[250px] animate-pulse"
       >
         <i class="ph ${
           theme == "dark" ? "ph-sun" : "ph-moon"
