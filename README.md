@@ -2,7 +2,7 @@
 
  <h1>Browyn Louis</h1>
  <p>
-  Welcome to the 1st iteration of my portfolio!.
+  Welcome to the 1st iteration of <strong>my portfolio!</strong>.
  </p>
  <p>
   Built with HTMl,TailwindCSS,JavaScript, bundled with Parcel and deployed on <a href="https://vercel.com">Vercel</a>
