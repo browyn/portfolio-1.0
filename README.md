@@ -28,6 +28,10 @@ This portfolio is built with the following technologies:
 - **Experience**: Details of my work experience and skills.
 - **Intuitive Design**: A user-friendly interface with a responsive layout to ensure a great experience across devices.
 
+## 🚨 Forking this repo (please read!)
+
+Yes, you can fork this repo, but please give me proper credit by linking back to [browyn.vercel.app](https://browyn.vercel.app). Thanks!
+
 ## Getting Started
 
 To get a local copy of this project up and running, follow these steps:
@@ -65,7 +69,3 @@ This will start Parcel and open the project in your default web browser.
 ```
 
 This will create an optimized version of your portfolio in the dist folder.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
