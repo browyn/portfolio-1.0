@@ -9,26 +9,6 @@
  </p>
 </div>
 
-
-## Table of Contents
-
-- [Technologies Used](#technologies-used)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Folder Structure](#folder-structure)
-- [License](#license)
-
-## Technologies Used
-
-This portfolio is built with the following technologies:
-
-- **HTML**: For the structure of the web pages.
-- **CSS**: For styling the components.
-- **JavaScript**: For interactive elements.
-- **TypeScript**: For adding type safety and enhancing the JavaScript code.
-- **Tailwind CSS**: For utility-first styling and responsive design.
-- **Parcel**: For bundling the project and managing assets.
-
 ## Features
 
 - **Projects**: Display a list of my projects with descriptions and links.
