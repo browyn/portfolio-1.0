@@ -20,7 +20,7 @@
 
 Yes, you can fork this repo, but please give me proper credit by linking back to [browyn.vercel.app](https://browyn.vercel.app). Thanks!
 
-## Getting Started
+## Installation & Setup
 
 To get a local copy of this project up and running, follow these steps:
 
