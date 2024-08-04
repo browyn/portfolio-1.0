@@ -21,7 +21,7 @@ class Header {
   }
 
   #_generateMarkup() {
-    const { footerLinks } = data;
+    const { navLinks } = data;
 
     return `
       <div class="w-full fixed z-10">
@@ -53,7 +53,7 @@ class Header {
               id="nav"
             >
               <div class="flex flex-col gap-3.5">
-                ${footerLinks
+                ${navLinks
                   .map(
                     (link) =>
                       `
