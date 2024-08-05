@@ -10,9 +10,11 @@ class Controller {
     if (Controller._instance) {
       return Controller._instance;
     }
+
+    this.#_init();
   }
 
-  init() {
+  #_init() {
     AOS.init({
       duration: 1000,
     });
