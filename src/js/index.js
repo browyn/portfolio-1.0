@@ -9,8 +9,6 @@ import { getPath, initializeTheme } from "./helpers";
 initializeTheme();
 
 document.addEventListener("DOMContentLoaded", function App() {
-  controller.init();
-
   const path = getPath();
 
   switch (path) {
